@@ -72,3 +72,5 @@ Processed outputs will be saved in the `output/` folder.
 ## Conclusion
 
 This project represents a significant step in enhancing chat text extraction and categorization. While challenges like emoji detection remain, the improvements in timestamp recognition and text categorization are notable advancements.
+
+*Note: This project is part of an ongoing effort to improve text extraction from images, with a focus on chat screenshots. Future updates may include enhanced emoji detection and further optimizations.*
