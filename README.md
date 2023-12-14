@@ -1,5 +1,9 @@
 # Chat Text Extraction and Categorization Enhancement
 
+## Introduction
+
+This project aims to address the challenges in extracting and categorizing text from WhatsApp chat screenshots. By improving the accuracy of text categorization and timestamp recognition, this script enhances the analysis and processing of chat data.
+
 ## Project Overview
 
 This project focuses on enhancing the capabilities of a Python script to extract and categorize text from WhatsApp chat screenshots. The primary goal is to accurately categorize text into sender and receiver, detect emojis, and recognize timestamps associated with each message.
@@ -11,8 +15,6 @@ This project focuses on enhancing the capabilities of a Python script to extract
 - `input/`: Directory for chat screenshots to be analyzed.
 - `my_screenshots/`: Personal chat screenshots used for testing.
 - `output/`: Output directory for processed images.
-- `README.md`: Documentation of the project.
-- `requirements.txt`: Lists the Python dependencies (easyocr, opencv-python).
 
 ## Key Updates
 
@@ -48,13 +50,20 @@ The final script, `extract_chat_conversation.py`, processes images from the `inp
 - `categorize_text`: Categorizes extracted texts into formatted messages based on their position and content.
 - `main`: Processes each image and saves the output.
 
-## Running the Script
+## Installation and Setup
 
-Ensure you have the required dependencies installed by running:
+Before running the script, set up your environment:
 
 ```bash
+# Create a virtual environment (optional)
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+# Install dependencies
 pip install -r requirements.txt
 ```
+
+## Usage
 
 To process images, place them in the `input/` folder and run:
 
@@ -72,5 +81,11 @@ Processed outputs will be saved in the `output/` folder.
 ## Conclusion
 
 This project represents a significant step in enhancing chat text extraction and categorization. While challenges like emoji detection remain, the improvements in timestamp recognition and text categorization are notable advancements.
+
+## Acknowledgments
+
+Special thanks to Anant, for his invaluable contributions to this project.
+
+---
 
 *Note: This project is part of an ongoing effort to improve text extraction from images, with a focus on chat screenshots. Future updates may include enhanced emoji detection and further optimizations.*
