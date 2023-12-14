@@ -117,7 +117,7 @@ def clean_and_extract_timestamp(text):
             am_pm = 'AM' if hour < 12 else 'PM'
             hour = hour % 12
             hour = hour if hour else 12
-            timestamp_str = f"{hour}:{minute:02d} {am_pm}"
+            timestamp_str = f"({hour}:{minute:02d} {am_pm})"
         return '', timestamp_str
     return text, None
 
